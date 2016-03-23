@@ -45,6 +45,8 @@ if [ "$1" = 'ndtox' ]; then
     # looping
     # while true; do sleep 9876543210; done;
     while true; do relax_tail_sleep; done;
+elif [ "$1" = 'toxecho' ]; then
+    cd / && /toxecho
 else
     exec "$@"
 fi

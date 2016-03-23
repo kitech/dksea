@@ -11,7 +11,7 @@ RUN  /bootstrap.sh
 
 VOLUME ["/root/.config"]
 
-EXPOSE 33445/udp 443 3389 33445
+EXPOSE 33445/udp 33445 443 80 3389
 
 ENTRYPOINT ["/entrypoint.sh"]
 
