@@ -12,10 +12,10 @@ function install_deps()
     # pacman-key --populate archlinux
     # pacman-key --populate manjaro
     # pacman-key --refresh-keys
-    # pacman -Syy
+    pacman -Syy
     # pacman -S --noconfirm sudo ruby mariadb-clients nginx git postfix nodejs redis vim cronie openssh
     pacman -S --noconfirm toxcore
-    # pacman -Su --noconfirm
+    pacman -Su --noconfirm
     # pacman -U --noconfirm /var/cache/pacman/pkg/*.xz
     # ret=$?
     # if [ x"$ret" != x"0" ] ; then
