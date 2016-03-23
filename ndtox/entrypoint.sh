@@ -38,15 +38,16 @@ function relax_tail_sleep()
 ######
 show_banner;
 
-if [ "$1" = 'ndtox' ]; then
+if [ "$1" = 'toxbs' ]; then
     ######################
-
-    /tox-bootstrapd /tox-bootstrapd.conf
+    cd /toxbs && ./tox-bootstrapd ./tox-bootstrapd.conf
     # looping
     # while true; do sleep 9876543210; done;
     while true; do relax_tail_sleep; done;
 elif [ "$1" = 'toxecho' ]; then
-    cd / && /toxecho
+    cd /toxecho && ./toxecho
+elif [ "$1" = 'ceprobe' ]; then
+    cd /ceprobe && ./ceprobe
 else
     exec "$@"
 fi

@@ -11,11 +11,11 @@ RUN  /bootstrap.sh
 
 VOLUME ["/root/.config"]
 
-EXPOSE 33445/udp 33445 443 80 3389
+EXPOSE 33445/udp 33445 443 80 3389 8070 8050
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["ndtox"]
+CMD ["toxbs"]
 
 
 ### readme
