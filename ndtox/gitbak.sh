@@ -29,6 +29,8 @@ function preset()
 
     git config --global user.name "dktoxbot"
     git config --global user.email "drswinghead@sina.com"
+
+    git clone https://kitech@git.oschina.net/kitech/dkvol.git
 }
 
 
