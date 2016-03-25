@@ -39,7 +39,7 @@ function main()
     preset;
     while true; do
         backup;
-        sleep 30;
+        sleep 1800;
     done
 }
 
