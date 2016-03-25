@@ -45,6 +45,7 @@ if [ "$1" = 'toxbs' ]; then
     # while true; do sleep 9876543210; done;
     while true; do relax_tail_sleep; done;
 elif [ "$1" = 'toxecho' ]; then
+    /gitbak.sh &
     cd /toxecho && ./toxecho
 elif [ "$1" = 'ceprobe' ]; then
     cd /ceprobe && ./ceprobe

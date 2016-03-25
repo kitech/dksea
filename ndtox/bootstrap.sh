@@ -14,7 +14,7 @@ function install_deps()
     # pacman-key --refresh-keys
     pacman -Syy
     # pacman -S --noconfirm sudo ruby mariadb-clients nginx git postfix nodejs redis vim cronie openssh
-    pacman -S --noconfirm toxcore
+    pacman -S --noconfirm toxcore git
     pacman -Su --noconfirm
     # pacman -U --noconfirm /var/cache/pacman/pkg/*.xz
     # ret=$?
