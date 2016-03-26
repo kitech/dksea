@@ -6,7 +6,8 @@
 #
 
 # env
-# $GITPASS
+# $GITPASS backup password
+# $BAKINT  backup interval
 
 function backup()
 {
